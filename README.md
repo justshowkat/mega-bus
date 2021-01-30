@@ -1,5 +1,5 @@
 # mega-bus
 ## form page
-![alt text](./images/ss1)
+![alt text](./images/ss1.jpg)
 ## ticket page
-![alt text](./images/ss2)
+![alt text](./images/ss2.png)
