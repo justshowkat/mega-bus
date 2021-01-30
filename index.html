@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"> -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <main id="primary-area" class="main-content container">
+
+        <div class="booking-content">
+            <h1>Mega City Bus</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+
+        <div class="booking-form">
+            <h3>Explore By Bus</h3>
+
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Name</label>
+                    <input id="name" class="inp-style" type="text" name="" placeholder="jhon" required>
+                </div>
+                <div class="input-group">
+                    <label" for="">Phone</label>
+                    <input id="phone" class="inp-style" type="text" name="" placeholder="012345678909" required>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">From</label>
+                    <input id="starting-from" class="inp-style" type="text" name="" placeholder="Dhaka" required>
+                </div>
+                <div class="input-group">
+                    <label" for="">To</label>
+                    <input id="going-to" class="inp-style" type="text" name="" placeholder="Chittagong" required>
+                </div>
+            </div>
+
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Departure</label>
+                    <input id="departure" class="inp-style" type="date" name="" required>
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input id="return" class="inp-style" type="date" name="">
+                </div>
+            </div>
+
+            <div class="inputs">
+                <div class="input-group f-class mx-2">
+                    <div>
+                        <label for="">First class ($ <span id="fclass-price">150</span> ): <span id="fclass-total">00</span> </label>
+                        <div class="row center-item">
+                                <span id="f-plus" class="btn btn-secondary">+</span>
+                                <input id="fclass-ticket-number" class="inp-style inp-width form-control text-center" type="text" name="" value="0">
+                                <span id="f-minus" class="btn btn-secondary">-</span>
+                        </div>  
+                    </div>
+                </div>
+                <div class="input-group f-class mx-2">
+                    <div>
+                        <label for="">Economy class ($ <span id="eco-class-price">100</span> ): <span id="eco-class-total">00</span> </label>
+                        <div class="row center-item">
+                            <span id="e-plus" class="btn btn-secondary">+</span>
+                            <input id="eco-class-ticket-number" class="inp-style inp-width form-control text-center" type="text" value="0">
+                            <span id="e-minus" class="btn btn-secondary">-</span>
+                        </div>  
+                    </div>
+                </div>
+
+            </div>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="sub-total-price">00</span></p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="vat-price">00</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p>$ <span id="total-price">00</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- button area  -->
+            <span id="book-now" class="btn btn-style btn-success btn-lg">Book Now</span>
+            
+        </div>
+    </main>
+
+    <section id="secondary-area">
+        <div class="container d-flex justify-content-center py-5 my-5">
+            <div class="card " style="width: 18rem;">
+                <img src="./images/logo.png" class="card-img-top" alt="...">
+                <h2 class="text-center pt-5">Your Ticket</h2>
+                <p class="text-center"> <span id="ticket-date">date</span> </p>
+                <ul class="list-group list-group-flush">
+
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">Ticket No: </p> <span id="ticket-no">00</span></li>
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">Name: </p> <span id="psngr-name"> jhon</span></li>
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">phone : </p> <span id="psngr-phone">0123456789</span></li>
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">From : </p> <span id="start-point">dhaka</span></li>
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">To: </p> <span id="end-point">dhaka</span></li>
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">Frist class Seats: </p> <span id="f-class-seats">00</span></li>
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">Economy class Seats: </p><span id="eco-class-seats">00</span></li>
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">Return Date: </p><span id="return-date">00</span></li>
+                  <li class="list-group-item d-flex flex-row justify-content-between"><p class="fw-bold">$Price: </p><span id="final-price">00</span></li>
+                </ul>
+                <div class="d-flex justify-content-around card-body">
+                    <span id="another" class="btn btn-lg btn-success">order another one >></span>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <!--Thank You-->
+
+      <script src="./script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
